@@ -264,8 +264,16 @@ function resizeSide(){
 }
 
 function resizeBlogMaxWidth(){
-    if (window.innerWidth >= window.innerHeight) $flexBlog.css(`max-width`, `75vh`);
-    else $flexBlog.css(`max-width`, `75vw`);
+    if (window.innerWidth >= window.innerHeight) $flexBlog.css(`max-width`, `100vh`);
+    else $flexBlog.css(`max-width`, `90vw`);
+
+    let windowSize = Math.min(window.innerWidth, window.innerHeight);
+    let $flexText = $(`.flex-text`);
+    if(windowSize >= 2560) $flexText.css(`font-size`, `30px`);
+    else if(windowSize < 2560 && windowSize >= 1650) $flexText.css(`font-size`, `28px`);
+    else if(windowSize < 1650 && windowSize >= 750) $flexText.css(`font-size`, `26px`);
+    else if(windowSize < 750 && windowSize >= 450) $flexText.css(`font-size`, `24px`);
+    else $flexText.css(`font-size`, `22px`);
 }
 
 //============
@@ -556,7 +564,7 @@ function scrollHorizontal(){
             }
             
             let windowWidth = Math.max(Math.min(window.innerWidth, 2560), 320);
-            let speedWeight = scale(windowWidth, 320, 2560, 0.015, 0.03);
+            let speedWeight = scale(windowWidth, 320, 2560, 0.02, 0.035);
             scrollDeltaH += delta * speedWeight;
             // e.preventDefault();
     
@@ -660,6 +668,7 @@ requestTimeout(function(){
 //resize
 setSideColumnHeight();
 resizeSide();
+resizeBlogMaxWidth();
 window.addEventListener(`resize`, setSideColumnHeight);
 window.addEventListener(`resize`, resizeSide);
 window.addEventListener(`resize`, resizeBlogMaxWidth);
