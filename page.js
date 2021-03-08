@@ -3,6 +3,9 @@ const lerp = function (value1, value2, amount) {
     amount = amount > 1 ? 1 : amount;
     return value1 + (value2 - value1) * amount;
 };
+const scale = (num, in_min, in_max, out_min, out_max) => {
+    return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
+};
 
 /**************************request time out****************************** */
 // requestAnimationFrame() shim by Paul Irish
@@ -552,7 +555,9 @@ function scrollHorizontal(){
                       : 0;
             }
             
-            scrollDeltaH += delta * 0.02;
+            let windowWidth = Math.max(Math.min(window.innerWidth, 2560), 320);
+            let speedWeight = scale(windowWidth, 320, 2560, 0.015, 0.03);
+            scrollDeltaH += delta * speedWeight;
             // e.preventDefault();
     
             cancelAnimationFrame(IDscroll);
