@@ -623,7 +623,7 @@ let buttonColor = `rgba(255,255,255,0)`;
 let buttonImage = `url("./page-assets/button.png")`;
 let backButtonImage = `url("../pages-assets/zhu-yan.png")` ;
 let backButtonColor = `black` ;
-let backLink = `../index.html` ;
+let backLink = `/` ;
 
 let mode = `light`;
 let buttonFilter = `contrast(0%) brightness(70%)`;
