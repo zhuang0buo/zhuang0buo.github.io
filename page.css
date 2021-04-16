@@ -186,7 +186,8 @@ body{
 
     /* direction: rtl; */
 
-    background-color: rgba(255,255,255,0.55);
+    /* bg color alpha 0.55 for exclusion */
+    background-color: rgba(255,255,255,0.55); 
     background-image: url('./pages-assets/grain.gif');
     color: black;
     
@@ -228,18 +229,26 @@ body{
 
 @media (prefers-color-scheme: light) {
     .side-column-container{
+        /* bg color alpha 0.55 for exclusion */
         background-color: rgba(255,255,255,0.55);
         color: black;
         /* background-color: rgba(130,130,130,0.3);
         color: white; */
     }
+    a{
+        color: rgb(0, 77, 219);
+    }
 }
 @media (prefers-color-scheme: dark) {
     .side-column-container{
-        background-color: rgba(80,80,80,1);
+        /* bg color alpha 1 for exclusion */
+        background-color: rgba(80,80,80,0.55);
         color: white;
         /* background-color: rgba(255,255,255,0.55);
         color: black; */
+    }
+    a{
+        color: rgb(255, 162, 250);
     }
 }
 .side-column-container > * {
