@@ -3,7 +3,7 @@
 
 html{
     scroll-behavior: smooth;
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255,255,255,0) !important;
 }
 body{
     /* --border-width: min( max(calc( min(100vh, 100vw) / 170), 3px), 7px); */
@@ -51,7 +51,7 @@ body{
 
 @media (prefers-color-scheme: light) {
     html{
-        background-color: rgba(255,255,255,0);
+        background-color: rgba(255,255,255,0) !important;
     }
     body {
         --border-color: rgb(26, 26, 26);
@@ -63,7 +63,7 @@ body{
 }
 @media (prefers-color-scheme: dark) {
     html{
-        background-color: rgba(255,255,255,0);
+        background-color: rgba(255,255,255,0) !important;
     }
     body {
         --border-color:rgb(238, 238, 238);
