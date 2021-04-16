@@ -60,7 +60,7 @@ body{
 @media (prefers-color-scheme: dark) {
     body {
         --border-color:rgb(238, 238, 238);
-        background-color: rgb(20,20,20);
+        background-color: rgb(20,20,20,0);
         color: white;
         -webkit-animation: start-bg-dark 2s ease 1;
                 animation: start-bg-dark 2s ease 1;
@@ -236,19 +236,19 @@ body{
         color: white; */
     }
     a{
-        color: rgb(0, 77, 219);
+        color: rgb(0, 64, 184);
     }
 }
 @media (prefers-color-scheme: dark) {
     .side-column-container{
         /* bg color alpha 1 for exclusion */
-        background-color: rgba(80,80,80,0.55);
+        background-color: rgba(80,80,80,0.65);
         color: white;
         /* background-color: rgba(255,255,255,0.55);
         color: black; */
     }
     a{
-        color: rgb(255, 162, 250);
+        color: rgb(255, 190, 252);
     }
 }
 .side-column-container > * {
