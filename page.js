@@ -497,7 +497,7 @@ function buttonEvents(){
     });
     flexContainer.addEventListener(`mouseup`, function(){
         flexClickTime = new Date().getTime() - flexClickTimeStart;
-        if(flexClickTime < 150){
+        if(flexClickTime < 300){
             if(narrowScreen){
                 if(!sideFolded){
                     sideFolded = true;
