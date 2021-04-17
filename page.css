@@ -58,6 +58,7 @@ html,body{
     }
     body {
         --border-color: rgb(26, 26, 26);
+        --background-color: rgba(255,255,255,0);
         background-color: rgba(255,255,255,0);
         color: black;
         /* -webkit-animation: start-bg-light 2s ease 1;
@@ -70,6 +71,7 @@ html,body{
     }
     body {
         --border-color:rgb(238, 238, 238);
+        --background-color: rgb(20,20,20);
         background-color: rgb(20,20,20);
         color: white;
         -webkit-animation: start-bg-dark 2s ease 1;
