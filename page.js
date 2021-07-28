@@ -264,8 +264,8 @@ function resizeSide(){
 }
 
 function resizeBlogMaxWidth(){
-    if (window.innerWidth >= window.innerHeight) $flexBlog.css(`max-width`, `100vh`);
-    else $flexBlog.css(`max-width`, `90vw`);
+    if (window.innerWidth >= window.innerHeight) $flexBlog.css(`max-width`, `75vh`);
+    else $flexBlog.css(`max-width`, `85vw`);
 
     let windowSize = Math.min(window.innerWidth, window.innerHeight);
     let $flexText = $(`.flex-text`);
