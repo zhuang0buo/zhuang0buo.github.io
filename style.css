@@ -432,7 +432,7 @@ body{
     
     /* -webkit-backface-visibility: hidden;
     backface-visibility: hidden; */
-    -webkit-font-smoothing: subpixel-antialiased;
+    /* -webkit-font-smoothing: subpixel-antialiased;*/
 
     transform: translate3d(0,0,0);
 
