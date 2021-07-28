@@ -666,8 +666,10 @@ requestTimeout(function(){
 
 //share screen iframe
 shareScreenIframe = document.getElementById(`share-screen`);
-if(!isMobileTablet) shareScreenIframe.style.setProperty(`width`, `135vh`);
-else shareScreenIframe.style.setProperty(`width`, `33vh`);
+if(shareScreenIframe){
+    if(!isMobileTablet) shareScreenIframe.style.setProperty(`width`, `135vh`);
+    else shareScreenIframe.style.setProperty(`width`, `33vh`);
+}
 
 //===
 //resize
