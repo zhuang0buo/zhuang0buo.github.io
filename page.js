@@ -664,6 +664,11 @@ requestTimeout(function(){
     requestTimeout(function(){$(`#transition`).css(`display`, `none`);}, 750);
 }, 100);
 
+//share screen iframe
+shareScreenIframe = document.getElementById(`share-screen`);
+if(!isMobileTablet) shareScreenIframe.style.setProperty(`width`, `135vh`);
+else shareScreenIframe.style.setProperty(`width`, `30.01847vh`);
+
 //===
 //resize
 setSideColumnHeight();
