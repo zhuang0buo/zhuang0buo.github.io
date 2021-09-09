@@ -307,12 +307,12 @@ body{
 
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-font-smoothing: subpixel-antialiased;
+    /* -webkit-font-smoothing: subpixel-antialiased; */
 
     outline: 1px solid rgba(255,255,255,0);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+    /* -webkit-font-smoothing: antialiased; */
+    /* -moz-osx-font-smoothing: grayscale; */
+    /* text-rendering: optimizeLegibility; */
 }
 
 /* MAIN MENU */
@@ -404,7 +404,6 @@ body{
 }
 
 .option-circle{
-
     position: absolute;
     border-radius: 100%;
     width: 60px;
@@ -414,8 +413,8 @@ body{
 
     outline: 1px solid rgba(255,255,255,0);
     /* -webkit-font-smoothing: antialiased; */
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+    /* -moz-osx-font-smoothing: grayscale; */
+    /* text-rendering: optimizeLegibility; */
     
     background-color: rgba(255,255,255,0);
     background-image: none;
@@ -432,7 +431,7 @@ body{
     
     /* -webkit-backface-visibility: hidden;
     backface-visibility: hidden; */
-    -webkit-font-smoothing: subpixel-antialiased;
+    /* -webkit-font-smoothing: subpixel-antialiased; */
 
     transform: translate3d(0,0,0);
 
