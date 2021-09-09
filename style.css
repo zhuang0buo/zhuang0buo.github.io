@@ -257,7 +257,7 @@ body{
     /* transform: scale(1); */
     -webkit-transform-origin: center left;
     /* -webkit-transform: scale(1); */
-    perspective: 0px;
+    /* perspective: 0px; */
 }
 
 .vertical{
@@ -272,7 +272,7 @@ body{
     /* transform: rotateZ(-90deg) scale(1); */
     -webkit-transform-origin: center left;
     /* -webkit-transform: rotateZ(-90deg) scale(1); */
-    perspective: 0px;
+    /* perspective: 0px; */
 }
 
 .menu {
