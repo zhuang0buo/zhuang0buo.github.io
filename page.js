@@ -84,9 +84,9 @@ var vis = (function(){
         if (c) document.addEventListener(eventKey, c);
         return !document[stateKey];
     }
-  })();
+})();
   // check if current tab is active or not
-  vis(function(){
+vis(function(){
     // if(vis()){                   
     // } 
     if(vis() == false) {
@@ -94,27 +94,27 @@ var vis = (function(){
         LASTNOWscroll = undefined;
         LASTNOWscrollV = undefined;
     }
-  });
+});
   
-  var notIE = (document.documentMode === undefined),
-      isChromium = window.chrome;
-  if (notIE && !isChromium) {
-      // checks for Firefox and other  NON IE Chrome versions
-      $(window).on("focusout", function () {
-        // blur
-        LASTNOWscroll = undefined;
-        LASTNOWscrollV = undefined;
-      });
-  } 
-  else {
-      // checks for IE and Chromium versions
-      // bind blur event
-      window.addEventListener("blur", function () {
-        // blur
-        LASTNOWscroll = undefined;
-        LASTNOWscrollV = undefined;
-      });
-  }
+var notIE = (document.documentMode === undefined),
+    isChromium = window.chrome;
+if (notIE && !isChromium) {
+    // checks for Firefox and other  NON IE Chrome versions
+    $(window).on("focusout", function () {
+    // blur
+    LASTNOWscroll = undefined;
+    LASTNOWscrollV = undefined;
+    });
+} 
+else {
+    // checks for IE and Chromium versions
+    // bind blur event
+    window.addEventListener("blur", function () {
+    // blur
+    LASTNOWscroll = undefined;
+    LASTNOWscrollV = undefined;
+    });
+}
 
 /**************check mobile**********************/
 window.mobileAndTabletCheck = function() {
