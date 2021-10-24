@@ -199,7 +199,7 @@ html,body{
     /* direction: rtl; */
 
     /* bg color alpha 0.55 for exclusion */
-    background-color: rgba(255,255,255,0.55); 
+    background-color: rgba(255,255,255,0.55);
     background-image: url('./pages-assets/grain.gif');
     color: black;
     
@@ -215,7 +215,7 @@ html,body{
     -webkit-animation: bg-position-move 120s ease-out infinite;
             animation: bg-position-move 120s ease-out infinite;
     
-    mix-blend-mode: luminosity;
+    /* mix-blend-mode: luminosity; */
 }
 
 @media only screen and (max-width: 2560px) {
