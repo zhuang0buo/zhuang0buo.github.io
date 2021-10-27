@@ -857,10 +857,10 @@ class Menus{
                 this.isScroll = false;
                 this.isSwipe = true;
     
-                if(movedir == `left`) this.deltaY += -90 * -0.085;
-                else if (movedir == `right`) this.deltaY += 90 * -0.085;
-                else if(movedir == `up`) this.deltaY += -90 * -0.085;
-                else if (movedir == `down`) this.deltaY += 90 * -0.085;
+                if(movedir == `left`) this.deltaY += -90 * -0.1;
+                else if (movedir == `right`) this.deltaY += 90 * -0.1;
+                else if(movedir == `up`) this.deltaY += -90 * -0.1;
+                else if (movedir == `down`) this.deltaY += 90 * -0.1;
     
                 cancelAnimationFrame(this.IDMainScroll);
                 cancelAnimationFrame(this.IDMainSwipe);
@@ -871,10 +871,10 @@ class Menus{
                 this.isScroll = false;
                 this.isSwipe = true;
     
-                if(swipedir == `left`) this.deltaY += -175 * -3;
-                else if (swipedir == `right`) this.deltaY += 175 * -3;
-                else if(swipedir == `up`) this.deltaY += -175 * -3;
-                else if (swipedir == `down`) this.deltaY += 175 * -3;
+                if(swipedir == `left`) this.deltaY += -175 * -6;
+                else if (swipedir == `right`) this.deltaY += 175 * -6;
+                else if(swipedir == `up`) this.deltaY += -175 * -6;
+                else if (swipedir == `down`) this.deltaY += 175 * -6;
     
                 cancelAnimationFrame(this.IDMainScroll);
                 cancelAnimationFrame(this.IDMainSwipe);
