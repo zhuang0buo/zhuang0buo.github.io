@@ -897,6 +897,9 @@ requestTimeout(function(){
 }, 100);
 menus = new Menus();
 
+window.addEventListener(`hashchange`, function(){
+    location.reload();
+});
 if(isMobileTablet){
     let ua = window.navigator.userAgent;
     let iOS = !!ua.match(/iPad/i) || !!ua.match(/iPhone/i);
