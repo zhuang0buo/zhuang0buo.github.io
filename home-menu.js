@@ -857,10 +857,10 @@ class Menus{
                 this.isScroll = false;
                 this.isSwipe = true;
     
-                if(movedir == `left`) this.deltaY += -90 * -0.1;
-                else if (movedir == `right`) this.deltaY += 90 * -0.1;
-                else if(movedir == `up`) this.deltaY += -90 * -0.1;
-                else if (movedir == `down`) this.deltaY += 90 * -0.1;
+                if(movedir == `left`) this.deltaY += -90 * -0.9;
+                else if (movedir == `right`) this.deltaY += 90 * -0.9;
+                else if(movedir == `up`) this.deltaY += -90 * -0.9;
+                else if (movedir == `down`) this.deltaY += 90 * -0.9;
     
                 cancelAnimationFrame(this.IDMainScroll);
                 cancelAnimationFrame(this.IDMainSwipe);
@@ -871,10 +871,10 @@ class Menus{
                 this.isScroll = false;
                 this.isSwipe = true;
     
-                if(swipedir == `left`) this.deltaY += -175 * -6;
-                else if (swipedir == `right`) this.deltaY += 175 * -6;
-                else if(swipedir == `up`) this.deltaY += -175 * -6;
-                else if (swipedir == `down`) this.deltaY += 175 * -6;
+                if(swipedir == `left`) this.deltaY += -175 * -4;
+                else if (swipedir == `right`) this.deltaY += 175 * -4;
+                else if(swipedir == `up`) this.deltaY += -175 * -4;
+                else if (swipedir == `down`) this.deltaY += 175 * -4;
     
                 cancelAnimationFrame(this.IDMainScroll);
                 cancelAnimationFrame(this.IDMainSwipe);
@@ -897,9 +897,9 @@ requestTimeout(function(){
 }, 100);
 menus = new Menus();
 
-window.addEventListener(`hashchange`, function(){
-    location.reload();
-});
+// window.addEventListener(`hashchange`, function(){
+//     location.reload();
+// });
 if(isMobileTablet){
     let ua = window.navigator.userAgent;
     let iOS = !!ua.match(/iPad/i) || !!ua.match(/iPhone/i);
