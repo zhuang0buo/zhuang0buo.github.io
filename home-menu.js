@@ -857,10 +857,10 @@ class Menus{
                 this.isScroll = false;
                 this.isSwipe = true;
     
-                if(movedir == `left`) this.deltaY += -90 * -0.9;
-                else if (movedir == `right`) this.deltaY += 90 * -0.9;
-                else if(movedir == `up`) this.deltaY += -90 * -0.9;
-                else if (movedir == `down`) this.deltaY += 90 * -0.9;
+                if(movedir == `left`) this.deltaY += -90 * -0.09;
+                else if (movedir == `right`) this.deltaY += 90 * -0.09;
+                else if(movedir == `up`) this.deltaY += -90 * -0.09;
+                else if (movedir == `down`) this.deltaY += 90 * -0.09;
     
                 cancelAnimationFrame(this.IDMainScroll);
                 cancelAnimationFrame(this.IDMainSwipe);
@@ -910,5 +910,8 @@ if(isMobileTablet){
         window.addEventListener(`orientationchange`, function(){
             location.reload();
         });
-    } 
+    }
+    window.onpageshow = function(e){
+        if(e.persisted) window.location.reload();
+    }
 }
