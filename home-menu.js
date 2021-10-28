@@ -137,7 +137,7 @@ function swipedetect(el, callback){
     startTime,
     handleswipe = callback || function(swipedir){}
 
-    var movedir, previousMove, currentMove, moveDistX, moveDistY, moveRestraint = 100;
+    var movedir, previousMove, currentMove, moveDistX, moveDistY, moveRestraint = 1;
   
     touchsurface.addEventListener('touchstart', function(e){
         var touchobj = e.changedTouches[0]
