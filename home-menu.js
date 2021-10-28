@@ -145,9 +145,9 @@ function swipedetect(el, callback){
         movedir = `none`;
         moveDistX = 0; 
         moveDistY = 0;
-        dist = 0
-        startX = touchobj.pageX
-        startY = touchobj.pageY
+        dist = 0;
+        startX = touchobj.pageX;
+        startY = touchobj.pageY;
         startTime = new Date().getTime() // record time when finger first makes contact with surface
         if(el !== window) e.preventDefault()
     }, false)
@@ -166,13 +166,15 @@ function swipedetect(el, callback){
 
             if(Math.abs(moveDistY) <= moveRestraint && window.innerHeight >= window.innerWidth){
                 movedir = (moveDistX < 0) ? `left` : `right`;
+                dist = Math.abs(moveDistX)
             }
             else if(Math.abs(moveDistX) <= moveRestraint && window.innerHeight < window.innerWidth){ 
                 movedir = (moveDistY < 0) ? `up` : `down`;
+                dist = Math.abs(moveDistY)
             }
-            else movedir = `none`;
+            else {movedir = `none`; dist = 0;}
             previousMove = currentMove;
-            handleswipe(swipedir, movedir);
+            handleswipe(swipedir, movedir, dist);
         }
     }, false)
   
@@ -185,13 +187,16 @@ function swipedetect(el, callback){
                                             //&& Math.abs(distY) <= restraint
             if (Math.abs(distX) >= threshold && window.innerHeight >= window.innerWidth){ // 2nd condition for horizontal swipe met
                 swipedir = (distX < 0)? 'left' : 'right' // if dist traveled is negative, it indicates left swipe
+                dist = Math.abs(distX);
             }
             // else if (Math.abs(distY) >= threshold && Math.abs(distX) <= restraint){
             else if (Math.abs(distY) >= threshold && window.innerHeight < window.innerWidth){ // 2nd condition for vertical swipe met
                 swipedir = (distY < 0)? 'up' : 'down' // if dist traveled is negative, it indicates up swipe
+                dist = Math.abs(distY);
             }
+            else{swipedir = `none`; dist = 0;}
         }
-        handleswipe(swipedir, movedir);
+        handleswipe(swipedir, movedir, dist);
         if(el !== window) e.preventDefault()
     }, false)
 }
@@ -851,16 +856,16 @@ class Menus{
         }.bind(this));
         
         //touch
-        swipedetect(window, function(swipedir, movedir){
+        swipedetect(window, function(swipedir, movedir, distance){
             // console.log(swipedir, movedir);
             if(movedir == `left` || movedir == `right` || movedir == `up` || movedir == `down`){
                 this.isScroll = false;
                 this.isSwipe = true;
     
-                if(movedir == `left`) this.deltaY += -90 * -0.09;
-                else if (movedir == `right`) this.deltaY += 90 * -0.09;
-                else if(movedir == `up`) this.deltaY += -90 * -0.09;
-                else if (movedir == `down`) this.deltaY += 90 * -0.09;
+                if(movedir == `left`) this.deltaY += -90 * -0.075 * distance;
+                else if (movedir == `right`) this.deltaY += 90 * -0.075 * distance;
+                else if(movedir == `up`) this.deltaY += -90 * -0.075 * distance;
+                else if (movedir == `down`) this.deltaY += 90 * -0.075 * distance;
     
                 cancelAnimationFrame(this.IDMainScroll);
                 cancelAnimationFrame(this.IDMainSwipe);
@@ -871,10 +876,10 @@ class Menus{
                 this.isScroll = false;
                 this.isSwipe = true;
     
-                if(swipedir == `left`) this.deltaY += -175 * -4;
-                else if (swipedir == `right`) this.deltaY += 175 * -4;
-                else if(swipedir == `up`) this.deltaY += -175 * -4;
-                else if (swipedir == `down`) this.deltaY += 175 * -4;
+                if(swipedir == `left`) this.deltaY += -175 * -3 * distance;
+                else if (swipedir == `right`) this.deltaY += 175 * -3 * distance;
+                else if(swipedir == `up`) this.deltaY += -175 * -3 * distance;
+                else if (swipedir == `down`) this.deltaY += 175 * -3 * distance;
     
                 cancelAnimationFrame(this.IDMainScroll);
                 cancelAnimationFrame(this.IDMainSwipe);
