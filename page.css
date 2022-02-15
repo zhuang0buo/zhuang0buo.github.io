@@ -391,12 +391,12 @@ html,body{
 } */
 
 .squiggle{
-    -webkit-animation: squiggly-anim 0.15s linear infinite;
-            animation: squiggly-anim 0.15s linear infinite;
+    /* -webkit-animation: squiggly-anim 0.15s linear infinite;
+            animation: squiggly-anim 0.15s linear infinite; */
 }
 .buzz{
-    -webkit-animation: buzz-anim 0.35s linear infinite;
-            animation: buzz-anim 0.35s linear infinite;
+    /* -webkit-animation: buzz-anim 0.35s linear infinite;
+            animation: buzz-anim 0.35s linear infinite; */
 }
 
 @-webkit-keyframes squiggly-anim {

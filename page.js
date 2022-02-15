@@ -340,7 +340,8 @@ function mousedownSideButton(e){
         firstTouch = e.changedTouches[0];
     }
 
-    if(isMobileTablet) $sideButton.css(`filter`, `brightness(500%)`);
+    // if(isMobileTablet) $sideButton.css(`filter`, `brightness(500%)`);
+    $sideButton.css(`filter`, `brightness(500%)`);
     $sideButton.css(`transform`, `scale(1.25)`);
     if(isMobileTablet){
         $sideButton.addClass(`buzz`);
@@ -360,7 +361,8 @@ function mousedownBackButton(e){
         firstTouch = e.changedTouches[0];
     }
 
-    if(isMobileTablet) $backButton.css(`filter`, `brightness(500%)`);
+    // if(isMobileTablet) $backButton.css(`filter`, `brightness(500%)`);
+    $backButton.css(`filter`, `brightness(500%)`);
     $backButton.css(`transform`, `scale(1.25)`);
     if(isMobileTablet){
         $backButton.addClass(`buzz`);
