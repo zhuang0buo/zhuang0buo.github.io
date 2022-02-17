@@ -526,13 +526,13 @@ class Menus{
             //=======
             //PREVIEW
             else{
-                if(!isMobileTablet){
-                    document.getElementById(`displacement0`).setAttribute(`scale`, `13`);
-                    document.getElementById(`displacement1`).setAttribute(`scale`, `16`);
-                    document.getElementById(`displacement2`).setAttribute(`scale`, `11`);
-                    document.getElementById(`displacement3`).setAttribute(`scale`, `13`);
-                    document.getElementById(`displacement4`).setAttribute(`scale`, `10`);
-                }
+                // if(!isMobileTablet){
+                //     document.getElementById(`displacement0`).setAttribute(`scale`, `13`);
+                //     document.getElementById(`displacement1`).setAttribute(`scale`, `16`);
+                //     document.getElementById(`displacement2`).setAttribute(`scale`, `11`);
+                //     document.getElementById(`displacement3`).setAttribute(`scale`, `13`);
+                //     document.getElementById(`displacement4`).setAttribute(`scale`, `10`);
+                // }
 
                 // if(!isMobileTablet && window.innerWidth >= 575){
                 if( !isMobileTablet && window.innerWidth >= 650){
@@ -568,13 +568,13 @@ class Menus{
 
             if(mouseDownCircleStyleChanged){
                 mouseDownCircleStyleChanged = false;
-                if(!isMobileTablet){
-                    document.getElementById(`displacement0`).setAttribute(`scale`, `10`);
-                    document.getElementById(`displacement1`).setAttribute(`scale`, `13`);
-                    document.getElementById(`displacement2`).setAttribute(`scale`, `8`);
-                    document.getElementById(`displacement3`).setAttribute(`scale`, `10`);
-                    document.getElementById(`displacement4`).setAttribute(`scale`, `7`);
-                }
+                // if(!isMobileTablet){
+                //     document.getElementById(`displacement0`).setAttribute(`scale`, `10`);
+                //     document.getElementById(`displacement1`).setAttribute(`scale`, `13`);
+                //     document.getElementById(`displacement2`).setAttribute(`scale`, `8`);
+                //     document.getElementById(`displacement3`).setAttribute(`scale`, `10`);
+                //     document.getElementById(`displacement4`).setAttribute(`scale`, `7`);
+                // }
     
                 this.$optionCircles.css(`border-color`, originalBorderColor);
                 this.$optionCircles.css(`background-image`, `none`);
@@ -630,52 +630,52 @@ class Menus{
                 if ($thisCircle.parent().attr('id') == `face3` && touchDist < smallTouchRestraint){
                     $title.html(`New + in Progress`);
                     
-                    $new.css(`display`, `initial`);
+                    $new.css(`display`, `block`);
                     $main.addClass(`menu-disappear`);
                     $past.addClass(`menu-disappear`);
                     $undone.addClass(`menu-disappear`);
                     $new.removeClass(`menu-disappear`);
                     
-                    clearRequestTimeout(IDmenuDisplay);
-                    IDmenuDisplay = requestTimeout(function(){
-                        $main.css(`display`, `none`);
-                        $past.css(`display`, `none`);
-                        $undone.css(`display`, `none`);
-                    }.bind($main), 1100)
+                    // clearRequestTimeout(IDmenuDisplay);
+                    // IDmenuDisplay = requestTimeout(function(){
+                    //     $main.css(`display`, `none`);
+                    //     $past.css(`display`, `none`);
+                    //     $undone.css(`display`, `none`);
+                    // }, 1100);
                 }
                 //if hit 'past'
                 else if ($thisCircle.parent().attr('id') == `face4` && touchDist < smallTouchRestraint){
                     $title.html(`Past Projects`);
 
-                    $past.css(`display`, `initial`);
+                    $past.css(`display`, `block`);
                     $main.addClass(`menu-disappear`);
                     $new.addClass(`menu-disappear`);
                     $undone.addClass(`menu-disappear`);
                     $past.removeClass(`menu-disappear`);
                     
-                    clearRequestTimeout(IDmenuDisplay);
-                    IDmenuDisplay = requestTimeout(function(){
-                        $main.css(`display`, `none`);
-                        $new.css(`display`, `none`);
-                        $undone.css(`display`, `none`);
-                    }.bind($main), 1100)
+                    // clearRequestTimeout(IDmenuDisplay);
+                    // IDmenuDisplay = requestTimeout(function(){
+                    //     $main.css(`display`, `none`);
+                    //     $new.css(`display`, `none`);
+                    //     $undone.css(`display`, `none`);
+                    // }, 1100);
                 }
                 //if hit 'undone'
                 else if ($thisCircle.parent().attr('id') == `face2` && touchDist < smallTouchRestraint){
                     $title.html(`Projects Undone`);
 
-                    $undone.css(`display`, `initial`);
+                    $undone.css(`display`, `block`);
                     $main.addClass(`menu-disappear`);
                     $new.addClass(`menu-disappear`);
                     $past.addClass(`menu-disappear`);
                     $undone.removeClass(`menu-disappear`);
                     
-                    clearRequestTimeout(IDmenuDisplay);
-                    IDmenuDisplay = requestTimeout(function(){
-                        $main.css(`display`, `none`);
-                        $new.css(`display`, `none`);
-                        $past.css(`display`, `none`);
-                    }.bind($main), 1100)
+                    // clearRequestTimeout(IDmenuDisplay);
+                    // IDmenuDisplay = requestTimeout(function(){
+                    //     $main.css(`display`, `none`);
+                    //     $new.css(`display`, `none`);
+                    //     $past.css(`display`, `none`);
+                    // }, 1100);
                 }
                 //if hit 'back'
                 else if (($thisCircle.parent().attr('id') == `face12` || 
@@ -683,18 +683,18 @@ class Menus{
                          $thisCircle.parent().attr('id') == `face18` )  && touchDist < smallTouchRestraint){
                     $title.html(`Zhengyang Huang <span style="font-family: 'kongxin'; font-size: 35px;">黄钲洋</span>`);
 
-                    $main.css(`display`, `initial`);
+                    $main.css(`display`, `block`);
                     $main.removeClass(`menu-disappear`);
                     $past.addClass(`menu-disappear`);
                     $new.addClass(`menu-disappear`);
                     $undone.addClass(`menu-disappear`);
     
-                    clearRequestTimeout(IDmenuDisplay);
-                    IDmenuDisplay = requestTimeout(function(){
-                        $past.css(`display`, `none`);
-                        $new.css(`display`, `none`);
-                        $undone.css(`display`, `none`);
-                    }.bind($past), 1100)
+                    // clearRequestTimeout(IDmenuDisplay);
+                    // IDmenuDisplay = requestTimeout(function(){
+                    //     $past.css(`display`, `none`);
+                    //     $new.css(`display`, `none`);
+                    //     $undone.css(`display`, `none`);
+                    // }, 1100);
                 }
                 //if hit project
                 else if ($thisCircle.parent().attr(`link`) && !redirecting){
