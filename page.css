@@ -199,8 +199,8 @@ html,body{
     /* direction: rtl; */
 
     /* bg color alpha 0.55 for exclusion */
-    background-color: rgba(255,255,255,0.55);
-    background-image: url('./pages-assets/grain.gif');
+    background-color: rgba(255,255,255,0.7);
+    /* background-image: url('./pages-assets/grain.gif'); */
     color: black;
     
     font-family: 'Space Mono', monospace;
@@ -242,7 +242,7 @@ html,body{
 @media (prefers-color-scheme: light) {
     .side-column-container{
         /* bg color alpha 0.55 for exclusion */
-        background-color: rgba(255,255,255,0.55);
+        background-color: rgba(255,255,255,0.7);
         color: black;
         /* background-color: rgba(130,130,130,0.3);
         color: white; */
@@ -254,7 +254,7 @@ html,body{
 @media (prefers-color-scheme: dark) {
     .side-column-container{
         /* bg color alpha 1 for exclusion */
-        background-color: rgba(80,80,80,0.65);
+        background-color: rgba(50,50,50,0.9);
         color: white;
         /* background-color: rgba(255,255,255,0.55);
         color: black; */
