@@ -94,8 +94,6 @@ html,body{
     overflow-y: hidden;
     align-items: center;
     /* writing-mode: horizontal-tb; */
-    transition: opacity 1s ease, -webkit-filter 1s ease;
-    transition: opacity 1s ease, filter 1s ease;
     transition: opacity 1s ease, filter 1s ease, -webkit-filter 1s ease;
 }
 
@@ -207,10 +205,6 @@ html,body{
     font-size: 22px;
     font-weight: 600;
 
-    transition: all 0.5s ease, transform 1s ease, width 0.25s ease, opacity 1s ease, -webkit-filter 1s ease;
-
-    transition: all 0.5s ease, transform 1s ease, width 0.25s ease, opacity 1s ease, filter 1s ease;
-
     transition: all 0.5s ease, transform 1s ease, width 0.25s ease, opacity 1s ease, filter 1s ease, -webkit-filter 1s ease;
     -webkit-animation: bg-position-move 120s ease-out infinite;
             animation: bg-position-move 120s ease-out infinite;
@@ -290,10 +284,6 @@ html,body{
     mix-blend-mode: difference;
     /* filter: brightness(100%); */
 
-    transition: all 0.5s ease, transform 1s ease, left 0.25s ease, opacity 1s ease, -webkit-filter 1s ease;
-
-    transition: all 0.5s ease, transform 1s ease, left 0.25s ease, opacity 1s ease, filter 1s ease;
-
     transition: all 0.5s ease, transform 1s ease, left 0.25s ease, opacity 1s ease, filter 1s ease, -webkit-filter 1s ease;
     z-index: 1;
 }
@@ -337,10 +327,6 @@ html,body{
     /* -webkit-filter: contrast(0%) brightness(70%);
             filter: contrast(0%) brightness(70%); */
 
-    transition: all 0.25s cubic-bezier(.35,.19,.61,2.2), left 0.75s cubic-bezier(.35,.19,.51,1.35), background-color 0.3s ease, opacity 1s ease, -webkit-filter 1s ease;
-
-    transition: all 0.25s cubic-bezier(.35,.19,.61,2.2), left 0.75s cubic-bezier(.35,.19,.51,1.35), background-color 0.3s ease, opacity 1s ease, filter 1s ease;
-
     transition: all 0.25s cubic-bezier(.35,.19,.61,2.2), left 0.75s cubic-bezier(.35,.19,.51,1.35), background-color 0.3s ease, opacity 1s ease, filter 1s ease, -webkit-filter 1s ease;
 }
 #back-button{
@@ -362,10 +348,6 @@ html,body{
     mix-blend-mode: difference;
     /* -webkit-filter: contrast(0%) brightness(70%);
             filter: contrast(0%) brightness(70%); */
-
-    transition: all 0.25s cubic-bezier(.35,.19,.61,2.2), left 1s cubic-bezier(.35,.19,.51,1.35), background-color 0.75s ease, opacity 1s ease, -webkit-filter 1s ease;
-
-    transition: all 0.25s cubic-bezier(.35,.19,.61,2.2), left 1s cubic-bezier(.35,.19,.51,1.35), background-color 0.75s ease, opacity 1s ease, filter 1s ease;
 
     transition: all 0.25s cubic-bezier(.35,.19,.61,2.2), left 1s cubic-bezier(.35,.19,.51,1.35), background-color 0.75s ease, opacity 1s ease, filter 1s ease, -webkit-filter 1s ease;
 }
