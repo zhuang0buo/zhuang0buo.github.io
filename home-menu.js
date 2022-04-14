@@ -632,9 +632,9 @@ class Menus{
                     $title.html(`New + in Progress`);
                     
                     // $new.css(`display`, `block`);
-                    $main.addClass(`menu-disappear`);
-                    $past.addClass(`menu-disappear`);
-                    $undone.addClass(`menu-disappear`);
+                    if (!$main.hasClass(`menu-disappear`)) $main.addClass(`menu-disappear`);
+                    if (!$past.hasClass(`menu-disappear`)) $past.addClass(`menu-disappear`);
+                    if (!$undone.hasClass(`menu-disappear`)) $undone.addClass(`menu-disappear`);
                     $new.removeClass(`menu-disappear`);
                     
                     // clearRequestTimeout(IDmenuDisplay);
