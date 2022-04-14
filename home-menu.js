@@ -490,29 +490,29 @@ class Menus{
             else if (preColor && !preGradient) $thisCircle.css(`background-color`, `${preColor}`);
             else if (!preColor && preGradient) $thisCircle.css(`background-image`, `${preGradient}`);
             
-            if(!isMobileTablet){
-                //if firefox
-                if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
-                    if(window.innerWidth >= 650){
-                        if(preview) $thisCircle.addClass(`alt-buzz`);
-                        else $thisCircle.addClass(`squiggle-less-rotate`);
-                    }
-                    else{
-                        if(preview) $thisCircle.addClass(`alt-buzz-90`);
-                        else $thisCircle.addClass(`squiggle-less-rotate-90`);
-                    }
-                }
-                else{
-                    if(window.innerWidth >= 650) $thisCircle.addClass(`squiggle-less-rotate`);
-                    else $thisCircle.addClass(`squiggle-less-rotate-90`);
-                }
-                $thisCircle.prev().addClass(`squiggle`);
-            }
-            else{
-                if(window.innerHeight > window.innerWidth) $thisCircle.addClass(`buzz-rotate`);
-                else $thisCircle.addClass(`buzz`);
-                $thisCircle.prev().addClass(`buzz`);
-            }
+            // if(!isMobileTablet){
+            //     //if firefox
+            //     if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+            //         if(window.innerWidth >= 650){
+            //             if(preview) $thisCircle.addClass(`alt-buzz`);
+            //             else $thisCircle.addClass(`squiggle-less-rotate`);
+            //         }
+            //         else{
+            //             if(preview) $thisCircle.addClass(`alt-buzz-90`);
+            //             else $thisCircle.addClass(`squiggle-less-rotate-90`);
+            //         }
+            //     }
+            //     else{
+            //         if(window.innerWidth >= 650) $thisCircle.addClass(`squiggle-less-rotate`);
+            //         else $thisCircle.addClass(`squiggle-less-rotate-90`);
+            //     }
+            //     $thisCircle.prev().addClass(`squiggle`);
+            // }
+            // else{
+            //     if(window.innerHeight > window.innerWidth) $thisCircle.addClass(`buzz-rotate`);
+            //     else $thisCircle.addClass(`buzz`);
+            //     $thisCircle.prev().addClass(`buzz`);
+            // }
             
             //===========
             //NOT PREVIEW
@@ -578,14 +578,14 @@ class Menus{
     
                 this.$optionCircles.css(`border-color`, originalBorderColor);
                 this.$optionCircles.css(`background-image`, `none`);
-                this.$optionCircles.removeClass(`squiggle-less-rotate`);
-                this.$optionCircles.removeClass(`squiggle-less-rotate-90`);
-                this.$optionCircles.prev().removeClass(`squiggle`);
-                this.$optionCircles.removeClass(`buzz-rotate`);
-                this.$optionCircles.removeClass(`buzz`);
-                this.$optionCircles.removeClass(`alt-buzz`);
-                this.$optionCircles.removeClass(`alt-buzz-90`);
-                this.$optionCircles.prev().removeClass(`buzz`);
+                // this.$optionCircles.removeClass(`squiggle-less-rotate`);
+                // this.$optionCircles.removeClass(`squiggle-less-rotate-90`);
+                // this.$optionCircles.prev().removeClass(`squiggle`);
+                // this.$optionCircles.removeClass(`buzz-rotate`);
+                // this.$optionCircles.removeClass(`buzz`);
+                // this.$optionCircles.removeClass(`alt-buzz`);
+                // this.$optionCircles.removeClass(`alt-buzz-90`);
+                // this.$optionCircles.prev().removeClass(`buzz`);
                 if(!redirecting){
                     this.$optionCircles.css(`width`, `60px`);
                     this.$optionCircles.css(`height`, `60px`);
