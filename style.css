@@ -239,8 +239,8 @@ body{
 
 .menu-disappear{
     opacity: 0;
-    -webkit-filter: blur(20px);
-            filter: blur(20px);
+    /* -webkit-filter: blur(20px);
+            filter: blur(20px); */
     /* z-index: 0 !important; */
     pointer-events: none;
 }
