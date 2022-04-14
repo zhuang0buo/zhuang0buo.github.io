@@ -630,7 +630,7 @@ class Menus{
                 if ($thisCircle.parent().attr('id') == `face3` && touchDist < smallTouchRestraint){
                     $title.html(`New + in Progress`);
                     
-                    $new.css(`display`, `block`);
+                    // $new.css(`display`, `block`);
                     $main.addClass(`menu-disappear`);
                     $past.addClass(`menu-disappear`);
                     $undone.addClass(`menu-disappear`);
@@ -647,7 +647,7 @@ class Menus{
                 else if ($thisCircle.parent().attr('id') == `face4` && touchDist < smallTouchRestraint){
                     $title.html(`Past Projects`);
 
-                    $past.css(`display`, `block`);
+                    // $past.css(`display`, `block`);
                     $main.addClass(`menu-disappear`);
                     $new.addClass(`menu-disappear`);
                     $undone.addClass(`menu-disappear`);
@@ -664,7 +664,7 @@ class Menus{
                 else if ($thisCircle.parent().attr('id') == `face2` && touchDist < smallTouchRestraint){
                     $title.html(`Projects Undone`);
 
-                    $undone.css(`display`, `block`);
+                    // $undone.css(`display`, `block`);
                     $main.addClass(`menu-disappear`);
                     $new.addClass(`menu-disappear`);
                     $past.addClass(`menu-disappear`);
@@ -683,7 +683,7 @@ class Menus{
                          $thisCircle.parent().attr('id') == `face18` )  && touchDist < smallTouchRestraint){
                     $title.html(`Zhengyang Huang <span style="font-family: 'kongxin'; font-size: 35px;">黄钲洋</span>`);
 
-                    $main.css(`display`, `block`);
+                    // $main.css(`display`, `block`);
                     $main.removeClass(`menu-disappear`);
                     $past.addClass(`menu-disappear`);
                     $new.addClass(`menu-disappear`);
