@@ -649,9 +649,9 @@ class Menus{
                     $title.html(`Past Projects`);
 
                     // $past.css(`display`, `block`);
-                    $main.addClass(`menu-disappear`);
-                    $new.addClass(`menu-disappear`);
-                    $undone.addClass(`menu-disappear`);
+                    if (!$main.hasClass(`menu-disappear`)) $main.addClass(`menu-disappear`);
+                    if (!$new.hasClass(`menu-disappear`)) $new.addClass(`menu-disappear`);
+                    if (!$undone.hasClass(`menu-disappear`)) $undone.addClass(`menu-disappear`);
                     $past.removeClass(`menu-disappear`);
                     
                     // clearRequestTimeout(IDmenuDisplay);
@@ -666,9 +666,9 @@ class Menus{
                     $title.html(`Projects Undone`);
 
                     // $undone.css(`display`, `block`);
-                    $main.addClass(`menu-disappear`);
-                    $new.addClass(`menu-disappear`);
-                    $past.addClass(`menu-disappear`);
+                    if (!$main.hasClass(`menu-disappear`)) $main.addClass(`menu-disappear`);
+                    if (!$new.hasClass(`menu-disappear`)) $new.addClass(`menu-disappear`);
+                    if (!$past.hasClass(`menu-disappear`)) $past.addClass(`menu-disappear`);
                     $undone.removeClass(`menu-disappear`);
                     
                     // clearRequestTimeout(IDmenuDisplay);
@@ -685,10 +685,10 @@ class Menus{
                     $title.html(`Zhengyang Huang <span style="font-family: 'kongxin'; font-size: 35px;">黄钲洋</span>`);
 
                     // $main.css(`display`, `block`);
+                    if (!$past.hasClass(`menu-disappear`)) $past.addClass(`menu-disappear`);
+                    if (!$new.hasClass(`menu-disappear`)) $new.addClass(`menu-disappear`);
+                    if (!$undone.hasClass(`menu-disappear`)) $undone.addClass(`menu-disappear`);
                     $main.removeClass(`menu-disappear`);
-                    $past.addClass(`menu-disappear`);
-                    $new.addClass(`menu-disappear`);
-                    $undone.addClass(`menu-disappear`);
     
                     // clearRequestTimeout(IDmenuDisplay);
                     // IDmenuDisplay = requestTimeout(function(){
