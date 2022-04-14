@@ -197,9 +197,9 @@ body{
 #main-menu {
     --scrollDeg: 15deg;
     position: fixed;
-    transition: opacity 1.25s ease, -webkit-filter 0.75s ease;
-    transition: opacity 1.25s ease, filter 0.75s ease;
-    transition: opacity 1.25s ease, filter 0.75s ease, -webkit-filter 0.75s ease;
+    /* transition: opacity 0.75s ease, -webkit-filter 0.75s ease; */
+    transition: opacity 0.75s ease, filter 0.75s ease;
+    /* transition: opacity 0.75s ease, filter 0.75s ease, -webkit-filter 0.75s ease; */
 
     z-index: 1;
 }
@@ -207,9 +207,9 @@ body{
     --scrollDeg: 15deg;
     position: fixed;
 
-    transition: opacity 1.25s ease, -webkit-filter 0.75s ease;
-    transition: opacity 1.25s ease, filter 0.75s ease;
-    transition: opacity 1.25s ease, filter 0.75s ease, -webkit-filter 0.75s ease;
+    /* transition: opacity 0.75s ease, -webkit-filter 0.75s ease; */
+    transition: opacity 0.75s ease, filter 0.75s ease;
+    /* transition: opacity 0.75s ease, filter 0.75s ease, -webkit-filter 0.75s ease; */
 
     /* display: none; */
     z-index: 1;
@@ -218,9 +218,9 @@ body{
     --scrollDeg: 15deg;
     position: fixed;
 
-    transition: opacity 1.25s ease, -webkit-filter 0.75s ease;
-    transition: opacity 1.25s ease, filter 0.75s ease;
-    transition: opacity 1.25s ease, filter 0.75s ease, -webkit-filter 0.75s ease;
+    /* transition: opacity 0.75s ease, -webkit-filter 0.75s ease; */
+    transition: opacity 0.75s ease, filter 0.75s ease;
+    /* transition: opacity 0.75s ease, filter 0.75s ease, -webkit-filter 0.75s ease; */
     /* display: none; */
     z-index: 1;
 }
@@ -228,9 +228,9 @@ body{
     --scrollDeg: 15deg;
     position: fixed;
 
-    transition: opacity 1.25s ease, -webkit-filter 0.75s ease;
-    transition: opacity 1.25s ease, filter 0.75s ease;
-    transition: opacity 1.25s ease, filter 0.75s ease, -webkit-filter 0.75s ease;
+    /* transition: opacity 0.75s ease, -webkit-filter 0.75s ease; */
+    transition: opacity 0.75s ease, filter 0.75s ease;
+    /* transition: opacity 0.75s ease, filter 0.75s ease, -webkit-filter 0.75s ease; */
 
     /* display: none; */
     z-index: 1;
@@ -239,8 +239,8 @@ body{
 
 .menu-disappear{
     opacity: 0;
-    /* -webkit-filter: blur(20px);
-            filter: blur(20px); */
+    /* -webkit-filter: blur(20px); */
+            filter: blur(20px);
     /* z-index: 0 !important; */
     pointer-events: none;
 }
