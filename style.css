@@ -197,7 +197,8 @@ body{
 #main-menu {
     --scrollDeg: 15deg;
     position: fixed;
-    transition: opacity 0.75s ease, filter 0.75s ease, -webkit-filter 0.75s ease;
+    transition: opacity 0.75s ease, filter 0.75s ease;
+    transition: opacity 0.75s ease, -webkit-filter 0.75s ease;
 
     z-index: 1;
 }
