@@ -194,6 +194,13 @@ body{
     transition: opacity 0.5s ease;
 }
 
+@media only screen and (max-width: 500px) {
+    #title{opacity: 0.6;}
+}
+@media only screen and (max-height: 500px) {
+    #title{opacity: 0.6;}
+}
+
 #main-menu {
     --scrollDeg: 15deg;
     position: fixed;
